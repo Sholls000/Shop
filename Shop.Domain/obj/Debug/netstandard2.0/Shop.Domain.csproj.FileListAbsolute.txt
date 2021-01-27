@@ -1,0 +1,9 @@
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\bin\Debug\netstandard2.0\Shop.Domain.deps.json
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\bin\Debug\netstandard2.0\Shop.Domain.dll
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\bin\Debug\netstandard2.0\Shop.Domain.pdb
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.AssemblyInfoInputs.cache
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.AssemblyInfo.cs
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.dll
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.pdb
+C:\Users\Abubakar Emmanuel\source\repos\Shop\Shop.Domain\obj\Debug\netstandard2.0\Shop.Domain.csprojAssemblyReference.cache

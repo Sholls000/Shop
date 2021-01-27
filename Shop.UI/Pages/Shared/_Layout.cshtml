@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Shop.UI</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/lib/bulma-0.9.0/css/bulma.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Production">
+
+        <link href="~/lib/bulma-0.9.0/css/bulma.min.css" rel="stylesheet" />
+
+    </environment>
+    
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" asp-page="/Index">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="navbar-item" asp-page="/Admin/Index">
+                            Admin
+                        </a>
+                    }
+                </div>
+                <div class="navbar-end">
+                    <vc:cart view="small"></vc:cart>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+
+
+                        <div class="navbar-item">
+                            <a asp-controller="Account" asp-action="Logout">Sign Out</a>
+                        </div>
+                    }
+                    else
+                    {
+
+                        <a class="navbar-item" asp-page="/Accounts/Login">Sign In</a>
+
+                    }
+                </div>
+
+            </div>
+
+        </div>   </nav>
+
+
+
+
+
+
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content">
+          
+         @RenderBody()       
+    </div>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2020 - Shop.UI</p>
+        </div>
+    </footer>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+             - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <environment include="Development">
+
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+
+
+    </environment>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
